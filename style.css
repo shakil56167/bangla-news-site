@@ -1,0 +1,39 @@
+:root{--bg:#f7fafc;--card:#fff;--muted:#64748b;--accent:#e11d48;--maxw:1100px}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans Bengali';background:var(--bg);color:#0f172a;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--maxw);margin:0 auto;padding:16px}
+header{background:#fff;border-bottom:1px solid #e6edf3}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand h1{font-size:18px;margin:0}
+.menu-toggle{display:flex;align-items:center;gap:8px}
+.search-input{display:none}
+nav{background:var(--card)}
+.nav-list{display:flex;gap:8px;overflow:auto;padding:10px 16px;scrollbar-width:none}
+.nav-list a{padding:8px 12px;border-radius:6px;font-size:14px;color:var(--muted)}
+.nav-list a:hover{background:#f1f5f9;color:#0f172a}
+.slider{position:relative;margin-top:12px}
+.slides{display:flex;gap:12px;overflow:hidden;transition:0.5s}
+.slide{min-width:100%;border-radius:8px;position:relative;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+.slide img{width:100%;height:320px;object-fit:cover;border-radius:8px}
+.slide .meta{position:absolute;left:16px;bottom:16px;background:linear-gradient(180deg,transparent,rgba(2,6,23,0.6));padding:12px;border-radius:6px;color:#fff}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
+.card{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 4px 12px rgba(2,6,23,0.04)}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+.card h3{margin:8px 0 6px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.main{display:block}
+footer{padding:18px 0;margin-top:20px;background:transparent;color:var(--muted)}
+.footer-links{display:flex;flex-wrap:wrap;gap:12px}
+.muted{color:var(--muted);font-size:13px}
+.btn{display:inline-block;padding:8px 12px;border-radius:6px;background:var(--accent);color:#fff}
+@media(min-width:800px){
+  .topbar{padding:18px 24px}
+  .search-input{display:block}
+  .container{padding:0}
+  .main{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .slide img{height:420px}
+}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}

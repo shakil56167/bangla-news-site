@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>নিউজ ওয়েবসাইট</title>
+  <meta name="description" content="বাংলা নিউজ টেমপ্লেট — দ্রুত, মোবাইল-ফ্রেন্ডলি ও AdSense-ready।">
+  <meta name="theme-color" content="#1f2937">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "নিউজ ওয়েবসাইট",
+    "url": "."
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+          <rect width="24" height="24" rx="4" fill="#111827"/>
+          <text x="6" y="16" fill="#fff" font-size="10" font-family="sans-serif">N</text>
+        </svg>
+        <div>
+          <h1>নিউজ ওয়েবসাইট</h1>
+          <div class="muted">সর্বশেষ আপডেট</div>
+        </div>
+      </div>
+      <div class="menu-toggle">
+        <input class="search-input" placeholder="খুঁজুন...">
+        <button id="mobileMenuBtn" aria-expanded="false">মেনু</button>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-list container" id="navList">
+        <a href="#">জাতীয়</a>
+        <a href="#">আন্তর্জাতিক</a>
+        <a href="#">দেশের খবর</a>
+        <a href="#">ক্রিকেট</a>
+        <a href="#">বিনোদন</a>
+        <a href="#">প্রযুক্তি</a>
+        <a href="#">চাকরি</a>
+        <a href="#">ধর্ম</a>
+        <a href="#">রাজনীতি</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="slider">
+      <div class="slides" id="slides">
+        <article class="slide">
+          <img src="https://picsum.photos/id/1015/1200/600" alt="Featured 1" loading="lazy">
+          <div class="meta">
+            <h2>শীর্ষ সংবাদ: গুরুত্বপূর্ণ ইভেন্টের শিরোনাম</h2>
+            <div class="muted">২২ নভেম্বর ২০২৫ • ঢাকা</div>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="https://picsum.photos/id/1016/1200/600" alt="Featured 2" loading="lazy">
+          <div class="meta">
+            <h2>আগের হাইলাইট: আরেকটি শিরোনাম</h2>
+            <div class="muted">২১ নভেম্বর ২০২৫ • আন্তর্জাতিক</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="main">
+      <div>
+        <div class="grid">
+          <article class="card">
+            <img src="https://picsum.photos/id/1025/800/500" loading="lazy">
+            <h3>জাতীয়: রাজধানীতে গুরুত্বপূর্ণ ঘোষণা</h3>
+            <p class="muted">একটি সংক্ষিপ্ত সারসংক্ষেপ—বিস্তারিত পড়ুন।</p>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/id/1027/800/500" loading="lazy">
+            <h3>আন্তর্জাতিক: বৈশ্বিক অর্থনীতি আপডেট</h3>
+            <p class="muted">বিশ্লেষণ ও প্রতিক্রিয়া।</p>
+          </article>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card"><h3>আমাদের সম্পর্কে</h3><p class="muted">ছোট বর্ণনা — সাইট পরিচিতি।</p></div>
+        <div class="card"><h3>বিজ্ঞাপন</h3><div style="background:#f1f5f9;padding:12px;text-align:center;border-radius:6px">Ad placeholder</div></div>
+      </aside>
+    </section>
+
+    <footer class="container">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+        <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Contact</a></div>
+        <div class="muted">© ২০২৫ নিউজ ওয়েবসাইট</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
